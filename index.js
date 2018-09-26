@@ -1,3 +1,9 @@
+Handlebars.registerHelper('comment_body', function()) {
+  if(this.state === "closed") {
+    return new Handlebars.Safe
+  }
+}
+
 function loadIssues() {
   var issues = {
     state: "closed",
